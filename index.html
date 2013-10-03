@@ -6,70 +6,119 @@
     <link rel="stylesheet" 
         href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//use.edgefonts.net/sansita-one.js"></script> 
+    <style>
+        body {
+            background-color: #3b4ede;
+        }
+        h1 {
+            font-family: sansita-one, sans-serif;
+            font-size: 5em;
+        }
+        .pageTitle {
+            border: 2px solid;
+            text-align:center;
+            background-color:white;
+            //-webkit-transform: rotate(270deg);   
+        }
+        .category {
+            border:2px solid;
+            border-radius:10px;
+            background-color:green;
+            margin: 10px;
+        }
+        .categoryTitle {
+            border-bottom: 2px solid;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .link {
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Cube World Wiki</h1>
-    <div id="catagory">
-        <h2>Inventory</h2>
-        <ul>
-            <li><a class="btn">Custamization</a></li>
-            <li>Armor</li>
-            <li>Accessories</li>
-            <li>Weapons</li>
-        </ul>
+    <div class="pageTitle">
+        <img src="cubeWorld.jpeg"/>
+        <h1 style="display:inline;">  Cube World Wiki</h1>
     </div>
-    <div>
-        <h2>Biomes</h2>
-        <ul>
-            <li>Green lands</li>
-            <li>Snowlands</li>
-            <li>Oceans</li>
-            <li>Lava lands</li>
-            <li>Deserts</li>
-            <li>Jungles</li>
-        </ul>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="category">
+                <h2 class="categoryTitle">Inventory</h2>
+                <ul><!-- I don't like this weird html but Ben does -->
+                    <a class="link btn btn-success" href="#">Customization</a>
+                    <a class="link btn btn-success" href="#">Armor</a>
+                    <a class="link btn btn-success" href="#">Accessories</a>
+                    <a class="link btn btn-success" href="#">Weapons</a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="category">
+            <h2 class="categoryTitle">Biomes</h2>
+            <ul class="categoryLinks">
+                <a class="link btn btn-success" href="#">Green lands</a>
+                <a class="link btn btn-success" href="#">Snowlands</a>
+                <a class="link btn btn-success" href="#">Oceans</a>
+                <a class="link btn btn-success" href="#">Lava lands</a>
+                <a class="link btn btn-success" href="#">Deserts</a>
+                <a class="link btn btn-success" href="#">Jungles</a>
+            </ul>
+            </div>
+        </div>
     </div>
-    <div>
-        <h2>
-            Classes
-        </h2>
-        <ul>
-            <li>Mage</li>
-            <li>Warroir</li>
-            <li>Rouge</li>
-            <li>Ranger</li>
-        </ul>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="category">
+                <h2 class="categoryTitle">Classes</h2>
+                <ul class="categoryLinks">
+                    <a class="link btn btn-success" href="#">Mage</a>
+                    <a class="link btn btn-success" href="#">Warroir</a>
+                    <a class="link btn btn-success" href="#">Rouge</a>
+                    <a class="link btn btn-success" href="#">Ranger</a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="category">
+                <h2 class="categoryTitle">Races</h2>
+                <ul class="categoryLinks">
+                    <a class="link btn btn-success" href="#">Elfs</a>
+                    <a class="link btn btn-success" href="#">Frogmen</a>
+                    <a class="link btn btn-success" href="#">Human</a>
+                    <a class="link btn btn-success" href="#">Dwarf</a>
+                    <a class="link btn btn-success" href="#">Lizzardmen</a>
+                    <a class="link btn btn-success" href="#">Orcs</a>
+                    <a class="link btn btn-success" href="#">Undead</a>
+                    <a class="link btn btn-success" href="#">Goblin</a>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div>
-        <h2>Races</h2>
-        <ul>
-            <li>Elfs</li>
-            <li>Frogmen</li>
-            <li>Human</li>
-            <li>Dwarf</li>
-            <li>Lizzardmen</li>
-            <li>Orcs</li>
-            <li>Undead</li>
-            <li>Goblin</li>
-        </ul>
-    </div>
-    <div>
-        <h2>Crafting</h2>
-        <ul>
-            <li>Cubes</li>
-            <li>Materials</li>
-            <li>Recies</li>
-            <li>Food</li>
-        </ul>
-    </div>
-    <div>
-        <h2>Pets</h2>
-        <ul>
-            <li>Healer</li>
-            <li>Melee</li>
-            <li>Tank</li>
-            <li>Ranged</li>
-        </ul>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="category">
+                <h2 class="categoryTitle">Crafting</h2>
+                <ul class="categoryLinks">
+                    <a class="link btn btn-success" href="#">Cubes</a>
+                    <a class="link btn btn-success" href="#">Materials</a>
+                    <a class="link btn btn-success" href="#">Recies</a>
+                    <a class="link btn btn-success" href="#">Food</a>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="category">
+                <h2 class="categoryTitle">Pets</h2>
+                <ul class="categoryLinks">
+                    <a class="link btn btn-success" href="#">Healer</a>
+                    <a class="link btn btn-success" href="#">Melee</a>
+                    <a class="link btn btn-success" href="#">Tank</a>
+                    <a class="link btn btn-success" href="#">Ranged</a>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
